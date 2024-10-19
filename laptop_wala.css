@@ -1,0 +1,75 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(120deg, #e0f7fa, #ffffff); /* Light color gradient */
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  display: inline-block;
+  padding: 30px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: 600px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  margin: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  font-size: 1em;
+  width: calc(100% - 40px);
+  max-width: 350px;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.3em;
+  color: #444;
+  background-color: #f0e68c;
+  padding: 12px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px #bbb;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://img.freepik.com/free-vector/mathematics-background-geometric-frame-modern-education-design-vector_53876-156362.jpg?size=626&ext=jpg&ga=GA1.1.950700598.1723848999&semt=ais_hybrid"); /* Background representing math conversions */
+  opacity: 0.2; /* Light opacity for subtle effect */
+  z-index: -1;
+}

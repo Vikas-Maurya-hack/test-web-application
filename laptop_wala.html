@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math-themed Unit Converter</title>
+    <link rel="stylesheet" href="laptop_wala.css">
+    <script src="laptop_wala.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <div class="input-section">
+            <input type="number" id="inputValue" placeholder="Enter value" required>
+            <select id="inputUnit">
+                <optgroup label="Length">
+                    <option value="inch">Inch</option>
+                    <option value="foot">Foot</option>
+                    <option value="yard">Yard</option>
+                    <option value="mile">Mile</option>
+                    <option value="cm">Centimeter</option>
+                    <option value="meter">Meter</option>
+                    <option value="km">Kilometer</option>
+                </optgroup>
+                <optgroup label="Weight">
+                    <option value="ounce">Ounce</option>
+                    <option value="pound">Pound</option>
+                    <option value="gram">Gram</option>
+                    <option value="kilogram">Kilogram</option>
+                </optgroup>
+                <optgroup label="Volume">
+                    <option value="fluidOunce">Fluid Ounce</option>
+                    <option value="quart">Quart</option>
+                    <option value="gallon">Gallon</option>
+                    <option value="milliliter">Milliliter</option>
+                    <option value="liter">Liter</option>
+                </optgroup>
+            </select>
+            <select id="outputUnit">
+                <!-- Same options as inputUnit for the output unit selection -->
+                <!-- Length -->
+                <optgroup label="Length">
+                    <option value="inch">Inch</option>
+                    <option value="foot">Foot</option>
+                    <option value="yard">Yard</option>
+                    <option value="mile">Mile</option>
+                    <option value="cm">Centimeter</option>
+                    <option value="meter">Meter</option>
+                    <option value="km">Kilometer</option>
+                </optgroup>
+                <!-- Weight -->
+                <optgroup label="Weight">
+                    <option value="ounce">Ounce</option>
+                    <option value="pound">Pound</option>
+                    <option value="gram">Gram</option>
+                    <option value="kilogram">Kilogram</option>
+                </optgroup>
+                <!-- Volume -->
+                <optgroup label="Volume">
+                    <option value="fluidOunce">Fluid Ounce</option>
+                    <option value="quart">Quart</option>
+                    <option value="gallon">Gallon</option>
+                    <option value="milliliter">Milliliter</option>
+                    <option value="liter">Liter</option>
+                </optgroup>
+            </select>
+        </div>
+        <button onclick="convert()">Convert</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
